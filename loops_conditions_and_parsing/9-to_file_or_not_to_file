@@ -15,7 +15,7 @@ if [ -f $filename ] ; then
 else
 	
 if [ -d $filename ] ; then
-	echo "${filename} file exist"
+	echo "${filename} file exists"
 	if [ "$(ls -A $filename)" ] ; then
 	echo "${filename} file is empty"
 else
