@@ -15,11 +15,11 @@ if [ -f $filename ] ; then
 else
 	
 if [ -d $filename ] ; then
-	echo "${filename} exist"
+	echo "${filename} file exist"
 	if [ "$(ls -A $filename)" ] ; then
-	echo "${filename} is empty"
+	echo "${filename} file is empty"
 else
-	echo "${filename} is not empty"
+	echo "${filename} file is not empty"
 fi
 else
 	echo "${filename} file does not exist"
