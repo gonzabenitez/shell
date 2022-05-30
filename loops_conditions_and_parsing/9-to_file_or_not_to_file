@@ -16,7 +16,7 @@ else
 	
 if [ -d $filename ] ; then
 	echo "${filename} exist"
-	if [ $("ls -A $filename") ] ; then
+	if [ "$(ls -A $filename)" ] ; then
 	echo "${filename} is empty"
 else
 	echo "${filename} is not empty"
