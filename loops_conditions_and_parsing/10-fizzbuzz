@@ -4,13 +4,13 @@ for (( i=1 ; i<100 ; i++))
 do 
 	if [ $(( $i % 3 )) == 0 ] ; then 
 		if [ $(( $i % 5 )) == 0 ] ; then
-			echo "fizzbuzz"
+			echo "FizzBuzz"
 		else 
-			echo "fizz"
+			echo "Fizz"
 		fi
 	else 
 		if [ $(( $i % 5 )) == 0 ] ; then 
-			echo "buzz"
+			echo "Buzz"
 		else 
 			echo "$i"
 	fi
