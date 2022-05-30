@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #This is a script that does something#
-for i in $(ls); do 
-	echo $i | rev | cut -d "-" -f 1 | rev 
+for i in * ; do 
+	echo "$i" | rev | cut -d "-" -f 1 | rev 
 done
