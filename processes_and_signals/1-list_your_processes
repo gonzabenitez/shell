@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #This is a script that does something useful#
-echo "USER START COMMAND"
-echo "root 6:40 bash -c"
+ps aux --forest
