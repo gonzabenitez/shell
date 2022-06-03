@@ -9,13 +9,16 @@ case $1 in
 	echo "manage_my_process started"
 ;;
 	stop)
-	sudo pkill -f "./manage_my_process" && sudo rm /var/run/my_process.pid && echo "manage_my_process stopped"
+	sudo pkill -f "./manage_my_process" 
+       	rm /var/run/my_process.pid
+	echo "manage_my_process stopped"
 ;;
 	restart)
 	sudo pkill -f "./manage_my_process"  
        	rm /var/run/my_process.pid 
 	./manage_my_process &	
-       	pgrep -f "./manage_my_process" > /var/run/my_process.pid && echo "manage_my_process restarted"
+       	pgrep -f "./manage_my_process" > /var/run/my_process.pid
+	echo "manage_my_process restarted"
 
 ;;
 	*)
